@@ -22,7 +22,7 @@
 	<link rel='stylesheet' id='iconfontd-css' href='fonts/font_1620678_7g0p3h6gbl.css' type='text/css' media='all'>
 	<link rel='stylesheet' id='bootstrap-css' href='css/bootstrap.min.css' type='text/css' media='all'>
 	<link rel='stylesheet' id='lightbox-css' href='css/jquery.fancybox.min.css' type='text/css' media='all'>
-	<link rel='stylesheet' id='style-css' href='css/style.css' type='text/css' media='all'>
+	<link rel='stylesheet' id='style-css' href='css/style.min.css' type='text/css' media='all'>
 	<script type='text/javascript' src='js/jquery.min.js' id='jquery-js'></script>
 	<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
 	<script src="js/walinEdit.js"></script>
@@ -458,18 +458,6 @@
 												</li>
 											</ul>
 										</li>
-										<li id="menu-item-786"
-											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-786">
-											<a target="_blank" rel="noopener" href="javascript:;">
-												<i class="io io-change icon-fw icon-lg mr-2"></i>
-												<span>更新日志</span></a>
-										</li>
-										<li id="menu-item-286"
-											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-286">
-											<a target="_blank" rel="noopener" href="javascript:;">
-												<i class="io io-huangguan icon-fw icon-lg mr-2"></i>
-												<span>获取主题</span></a>
-										</li>
 									</ul>
 								</li>
 								<li class="sidebar-item">
@@ -477,25 +465,6 @@
 										<i class="io io-fuwu icon-fw icon-lg mr-2"></i>
 										<span>常用推荐</span>
 									</a>
-								</li>
-								<li class="sidebar-item">
-									<!--<a href="javascript:;">-->
-									<a href="index.html#term-448" class="smooth change-href"
-										data-change="https://nav.iowen.cn/#term-448">
-										<i class="io io-zixun icon-fw icon-lg mr-2"></i>
-										<span>社区资讯</span>
-										<i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
-									</a>
-									<ul>
-
-										<li>
-											<a href="index.html#term-39" class="smooth"><span>科技</span></a>
-										</li>
-
-										<li>
-											<a href="index.html#term-3" class="smooth"><span>社区资讯</span></a>
-										</li>
-									</ul>
 								</li>
 								<li class="sidebar-item">
 									<a href="index.html#term-98" class="smooth">
@@ -510,15 +479,9 @@
 									</a>
 								</li>
 								<li class="sidebar-item">
-									<a href="index.html#term-41" class="smooth">
-										<i class="io io-yanshi icon-fw icon-lg mr-2"></i>
-										<span>用户演示</span>
-									</a>
-								</li>
-								<li class="sidebar-item">
 									<!--<a href="javascript:;">-->
 									<a href="index.html#term-18" class="smooth change-href"
-										data-change="https://nav.iowen.cn/#term-18">
+										data-change="index.html#term-18">
 										<i class="io io-gongju icon-fw icon-lg mr-2"></i>
 										<span>常用工具</span>
 										<i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
@@ -686,17 +649,6 @@
 										</li>
 									</ul>
 								</li>
-								<li id="menu-item-786"
-									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-786"><a
-										target="_blank" rel="noopener" href="javascript:;">
-										<i class="io io-change icon-fw icon-lg mr-2"></i>
-										<span>更新日志</span></a></li>
-								<li id="menu-item-286"
-									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-286"><a
-										target="_blank" rel="noopener" href="javascript:;">
-										<i class="io io-huangguan icon-fw icon-lg mr-2"></i>
-										<span>获取主题</span></a></li>
-
 							</ul>
 						</div>
 
@@ -704,23 +656,14 @@
 							<!-- 一言 -->
 							<li class="nav-item mr-3 mr-lg-0 d-none d-lg-block">
 								<div class="text-sm overflowClip_1">
-									<script>
-										fetch('https://v1.hitokoto.cn')
-											.then(response => response.json())
-											.then(data => {
-												const hitokoto = document.getElementById('hitokoto_text');
-												hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid;
-												hitokoto.innerText = data.hitokoto;
-											})
-											.catch(console.error);
-									</script>
-									<div id="hitokoto"><p style="color: #2ed5c7" id="hitokoto_text">获取中...</p></div>
+									<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto&c=f"
+										defer></script>
+									<div id="hitokoto">
+										<p style="color: #2ed5c7" id="hitokoto_text">获取中...</p>
+									</div>
 								</div>
 							</li>
 							<!-- 一言 end -->
-							<li class="nav-login ml-3 ml-md-4">
-								<a href="login/index.html" title="登录"><i class="iconfont icon-user icon-2x"></i></a>
-							</li>
 							<li class="nav-search ml-3 ml-md-4">
 								<a href="javascript:" data-toggle="modal" data-target="#search-modal"><i
 										class="iconfont icon-search icon-2x"></i></a>
@@ -790,7 +733,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="favicon/www.c575.com.png"
-																data-was-processed="true" data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true" data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -811,7 +755,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="favicon/www.24kdh.com.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -832,7 +777,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="https://api.iowen.cn/favicon/xiaok.xxem.vip.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -853,7 +799,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="favicon/chinaword.press.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -874,7 +821,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="favicon/n6app.com.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -897,7 +845,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="favicon/www.info35.com.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -918,7 +867,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="favicon/bks.thefuture.top.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -939,7 +889,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="favicon/bks.thefuture.top.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -960,7 +911,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="https://api.iowen.cn/favicon/www.onebooks.cn.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -981,7 +933,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="favicon/www.hifast.cn.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -1003,7 +956,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="favicon/nav.hzwdd.cn.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -1024,7 +978,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="favicon/www.8kmm.com.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -1045,7 +1000,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="favicon/www.aboutppt.com.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -1066,7 +1022,8 @@
 															class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">
 															<img class="lazy" src="images/favicon.png"
 																data-src="favicon/xiaojun.space.png"
-																data-was-processed="true" onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
+																data-was-processed="true"
+																onerror="javascript:this.src='https://nav.iowen.cn/images/favicon.png'">
 														</div>
 														<div class="url-info flex-fill">
 															<div class="text-sm overflowClip_1">
@@ -1090,7 +1047,7 @@
 							<h1 id="comments-list-title" class="comments-title h5 mx-1 my-4">
 								<i class="iconfont icon-comment"></i>
 								<span class="noticom">
-									<a href="#comments" class="comments-title">4 条评论</a>
+									<a href="#comments" class="comments-title">评论</a>
 								</span>
 							</h1>
 							<div class="card">
@@ -1133,7 +1090,7 @@
 					<div class="btn rounded-circle weather m-1">
 						<div id="he-plugin-simple" style="display: contents;"></div>
 						<script>WIDGET = { CONFIG: { "modules": "02", "background": 5, "tmpColor": "888", "tmpSize": 14, "cityColor": "888", "citySize": 14, "aqiSize": 14, "weatherIconSize": 24, "alertIconSize": 18, "padding": "7px 2px 7px 2px", "shadow": "1", "language": "auto", "borderRadius": 5, "fixed": "false", "vertical": "middle", "horizontal": "left", "key": "a922adf8928b4ac1ae7a31ae7375e191" } }</script>
-						<script src="simple/static/js/he-simple-common-1.1.js"></script>
+						<script src="js/he-simple-common.js"></script>
 					</div>
 					<!-- 天气 end -->
 					<a href="javascript:" id="switch-mode" class="btn rounded-circle switch-dark-mode m-1"
@@ -1330,9 +1287,8 @@
 			</div>
 		</div>
 	</div>
-	<script type='text/javascript' src='ajax/libs/jqueryui/1.12.1/jquery-ui.min.js' id='jquery-ui-js'></script>
-	<script type='text/javascript' src='jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js'
-		id='jqueryui-touch-js'></script>
+	<script type='text/javascript' src='js/jquery-ui.min.js' id='jquery-ui-js'></script>
+	<script type='text/javascript' src='js/jquery.ui.touch-punch.min.js' id='jqueryui-touch-js'></script>
 	<script type='text/javascript' src='js/clipboard.min.js' id='clipboard-js'></script>
 	<script type='text/javascript' id='popper-js-extra'>
 		/* <![CDATA[ */
