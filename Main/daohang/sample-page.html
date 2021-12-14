@@ -575,17 +575,17 @@
         content="这是示范页面。页面和博客文章不同，它的位置是固定的，通常会在站点导航栏显示。很多用户都创建一个“关于”页面，向访客介绍自己。例如： 欢迎！我白天是个邮递员，晚上就是个有抱负的演员。这是我的网站。我...">
     <meta property="og:image" content="https://gitee.com/iowen/ioimg/raw/master/screenshots/2.jpg">
     <meta property="og:site_name" content="一为导航">
-    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
     <link rel="apple-touch-icon" href="images/app-ico.png">
     <meta name="robots" content="max-image-preview:large">
     <link rel="stylesheet" id="iconfont-css" href="css/iconfont.css" type="text/css" media="all">
     <link rel="stylesheet" id="iconfont-io-1-css" href="css/font_1620678_18rbnd2homc.css" type="text/css" media="all">
-    <link rel="stylesheet" id="bootstrap-css" href="css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" type="text/css" media="all">
     <link rel="stylesheet" id="style-css" href="css/style.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/he-simple.css">
-    <script src="js/he-simple.js"></script>
-    <script type="text/javascript" src="js/jquery.min.js" id="jquery-js"></script>
-    <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+    
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" id="jquery-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
     <script src="js/walinEdit.js"></script>
     <script type="text/javascript"
         id="jquery-js-after">/* <![CDATA[ */ function loadFunc(func) { var oldOnload = window.onload; if (typeof window.onload != "function") { window.onload = func; } else { window.onload = function () { oldOnload(); func(); } } } /* ]]> */</script>
@@ -646,7 +646,7 @@
         }
     </style><!-- 自定义代码 -->
     <!-- end 自定义代码 -->
-    <script type="text/javascript" async="" src="js/tcaptcha-frame.85d7a77d.js"></script>
+    
     <style id="theia-sticky-sidebar-stylesheet-TSS">
         .theiaStickySidebar:after {
             content: "";
@@ -1022,7 +1022,7 @@
                     <!-- 天气 -->
                     <div class="btn rounded-circle weather m-1">
                         <div data-v-41ba7e2c="" id="he-plugin-simple" style="position: relative;">
-                            <script data-v-41ba7e2c="" type="text/javascript" src="js/maps.js"></script>
+                            <script data-v-41ba7e2c="" type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.14&amp;key=e2b04289e870b005374ee030148d64fd"></script>
                             <div data-v-41ba7e2c="" class="s-sticker"
                                 style="font-size: 1.4em; cursor: pointer; padding: 7px 2px; background-color: transparent;">
                                 <div data-v-41ba7e2c="" style="width: 0px;"></div>
@@ -1030,7 +1030,7 @@
                                     style="font-size: 14px; color: rgb(136, 136, 136); vertical-align: middle;">7°C
                                 </div>
                                 <div data-v-7d48daab="" data-v-41ba7e2c="" class="s-sticker-cond module"
-                                    style="vertical-align: middle;"><img data-v-7d48daab="" src="images/502n.png"
+                                    style="vertical-align: middle;"><img data-v-7d48daab="" src="https://cdn.heweather.com/img/plugin/190516/icon/c/100d.png"
                                         style="width: 24px; height: 24px;"></div>
                                 <div data-v-41ba7e2c="" style="width: 100%;"></div>
                             </div>
@@ -1239,17 +1239,11 @@
     <script type="text/javascript" id="rocket-browser-checker-js-after">"use strict"; var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || !1, descriptor.configurable = !0, "value" in descriptor && (descriptor.writable = !0), Object.defineProperty(target, descriptor.key, descriptor) } } return function (Constructor, protoProps, staticProps) { return protoProps && defineProperties(Constructor.prototype, protoProps), staticProps && defineProperties(Constructor, staticProps), Constructor } }(); function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function") } var RocketBrowserCompatibilityChecker = function () { function RocketBrowserCompatibilityChecker(options) { _classCallCheck(this, RocketBrowserCompatibilityChecker), this.passiveSupported = !1, this._checkPassiveOption(this), this.options = !!this.passiveSupported && options } return _createClass(RocketBrowserCompatibilityChecker, [{ key: "_checkPassiveOption", value: function (self) { try { var options = { get passive() { return !(self.passiveSupported = !0) } }; window.addEventListener("test", null, options), window.removeEventListener("test", null, options) } catch (err) { self.passiveSupported = !1 } } }, { key: "initRequestIdleCallback", value: function () { !1 in window && (window.requestIdleCallback = function (cb) { var start = Date.now(); return setTimeout(function () { cb({ didTimeout: !1, timeRemaining: function () { return Math.max(0, 50 - (Date.now() - start)) } }) }, 1) }), !1 in window && (window.cancelIdleCallback = function (id) { return clearTimeout(id) }) } }, { key: "isDataSaverModeOn", value: function () { return "connection" in navigator && !0 === navigator.connection.saveData } }, { key: "supportsLinkPrefetch", value: function () { var elem = document.createElement("link"); return elem.relList && elem.relList.supports && elem.relList.supports("prefetch") && window.IntersectionObserver && "isIntersecting" in IntersectionObserverEntry.prototype } }, { key: "isSlowConnection", value: function () { return "connection" in navigator && "effectiveType" in navigator.connection && ("2g" === navigator.connection.effectiveType || "slow-2g" === navigator.connection.effectiveType) } }]), RocketBrowserCompatibilityChecker }();</script>
     <script type="text/javascript" id="rocket-preload-links-js-extra">/* <![CDATA[ */var RocketPreloadLinksConfig = { "excludeUris": "\/rankings|\/rankings\/|\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin|\/logout|\/wp-login.php", "usesTrailingSlash": "", "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif", "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm", "siteUrl": "https:\/\/nav.iowen.cn", "onHoverDelay": "100", "rateThrottle": "3" };/* ]]> */</script>
     <script type="text/javascript" id="rocket-preload-links-js-after">(function () { "use strict"; var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) { return typeof e } : function (e) { return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e }, e = function () { function i(e, t) { for (var n = 0; n < t.length; n++) { var i = t[n]; i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i) } } return function (e, t, n) { return t && i(e.prototype, t), n && i(e, n), e } }(); function i(e, t) { if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function") } var t = function () { function n(e, t) { i(this, n), this.browser = e, this.config = t, this.options = this.browser.options, this.prefetched = new Set, this.eventTime = null, this.threshold = 1111, this.numOnHover = 0 } return e(n, [{ key: "init", value: function () { !this.browser.supportsLinkPrefetch() || this.browser.isDataSaverModeOn() || this.browser.isSlowConnection() || (this.regex = { excludeUris: RegExp(this.config.excludeUris, "i"), images: RegExp(".(" + this.config.imageExt + ")$", "i"), fileExt: RegExp(".(" + this.config.fileExt + ")$", "i") }, this._initListeners(this)) } }, { key: "_initListeners", value: function (e) { -1 < this.config.onHoverDelay && document.addEventListener("mouseover", e.listener.bind(e), e.listenerOptions), document.addEventListener("mousedown", e.listener.bind(e), e.listenerOptions), document.addEventListener("touchstart", e.listener.bind(e), e.listenerOptions) } }, { key: "listener", value: function (e) { var t = e.target.closest("a"), n = this._prepareUrl(t); if (null !== n) switch (e.type) { case "mousedown": case "touchstart": this._addPrefetchLink(n); break; case "mouseover": this._earlyPrefetch(t, n, "mouseout") } } }, { key: "_earlyPrefetch", value: function (t, e, n) { var i = this, r = setTimeout(function () { if (r = null, 0 === i.numOnHover) setTimeout(function () { return i.numOnHover = 0 }, 1e3); else if (i.numOnHover > i.config.rateThrottle) return; i.numOnHover++, i._addPrefetchLink(e) }, this.config.onHoverDelay); t.addEventListener(n, function e() { t.removeEventListener(n, e, { passive: !0 }), null !== r && (clearTimeout(r), r = null) }, { passive: !0 }) } }, { key: "_addPrefetchLink", value: function (i) { return this.prefetched.add(i.href), new Promise(function (e, t) { var n = document.createElement("link"); n.rel = "prefetch", n.href = i.href, n.onload = e, n.onerror = t, document.head.appendChild(n) }).catch(function () { }) } }, { key: "_prepareUrl", value: function (e) { if (null === e || "object" !== (void 0 === e ? "undefined" : r(e)) || !1 in e || -1 === ["http:", "https:"].indexOf(e.protocol)) return null; var t = e.href.substring(0, this.config.siteUrl.length), n = this._getPathname(e.href, t), i = { original: e.href, protocol: e.protocol, origin: t, pathname: n, href: t + n }; return this._isLinkOk(i) ? i : null } }, { key: "_getPathname", value: function (e, t) { var n = t ? e.substring(this.config.siteUrl.length) : e; return n.startsWith("/") || (n = "/" + n), this._shouldAddTrailingSlash(n) ? n + "/" : n } }, { key: "_shouldAddTrailingSlash", value: function (e) { return this.config.usesTrailingSlash && !e.endsWith("/") && !this.regex.fileExt.test(e) } }, { key: "_isLinkOk", value: function (e) { return null !== e && "object" === (void 0 === e ? "undefined" : r(e)) && (!this.prefetched.has(e.href) && e.origin === this.config.siteUrl && -1 === e.href.indexOf("?") && -1 === e.href.indexOf("#") && !this.regex.excludeUris.test(e.href) && !this.regex.images.test(e.href)) } }], [{ key: "run", value: function () { "undefined" != typeof RocketPreloadLinksConfig && new n(new RocketBrowserCompatibilityChecker({ capture: !0, passive: !0 }), RocketPreloadLinksConfig).init() } }]), n }(); t.run(); }());</script>
-    <script type="text/javascript" src="js/popper.min.js" id="popper-js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js" id="bootstrap-js"></script>
-    <script type="text/javascript" src="js/theia-sticky-sidebar.min.js" id="sidebar-js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" id="popper-js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" id="bootstrap-js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/theia-sticky-sidebar@1.7.0/dist/theia-sticky-sidebar.min.js" id="sidebar-js"></script>
     <script type="text/javascript" src="js/lazyload.min.js" id="lazyload-js"></script>
     <script type="text/javascript" id="appjs-js-extra">/* <![CDATA[ */var theme = { "ajaxurl": "https:\/\/nav.iowen.cn\/wp-admin\/admin-ajax.php", "addico": "https:\/\/nav.iowen.cn\/wp-content\/themes\/onenav\/images\/add.png", "order": "desc", "formpostion": "top", "defaultclass": "io-grey-mode", "isCustomize": "1", "icourl": "https:\/\/api.iowen.cn\/favicon\/", "icopng": ".png", "urlformat": "1", "customizemax": "10", "newWindow": "0", "lazyload": "1", "minNav": "0", "loading": "", "hotWords": "baidu", "classColumns": " col-sm-6 col-md-4 col-xl-5a col-xxl-6a ", "apikey": "TWpBeU1USTJNemd4TWpZM0d6RS9oV1dGRFluUlZNVE5MYjJNek1sUXlTVFE0V0d4UU0yRXlURUZ5UTJSbA==", "isHome": "", "version": "3.1129" }; var localize = { "liked": "\u60a8\u5df2\u7ecf\u8d5e\u8fc7\u4e86!", "like": "\u8c22\u8c22\u70b9\u8d5e!", "networkerror": "\u7f51\u7edc\u9519\u8bef --.", "selectCategory": "\u4e3a\u4ec0\u4e48\u4e0d\u9009\u5206\u7c7b\u3002", "addSuccess": "\u6dfb\u52a0\u6210\u529f\u3002", "timeout": "\u8bbf\u95ee\u8d85\u65f6\uff0c\u8bf7\u518d\u8bd5\u8bd5\uff0c\u6216\u8005\u624b\u52a8\u586b\u5199\u3002", "lightMode": "\u65e5\u95f4\u6a21\u5f0f", "nightMode": "\u591c\u95f4\u6a21\u5f0f", "editBtn": "\u7f16\u8f91", "okBtn": "\u786e\u5b9a", "urlExist": "\u8be5\u7f51\u5740\u5df2\u7ecf\u5b58\u5728\u4e86 --.", "cancelBtn": "\u53d6\u6d88", "successAlert": "\u6210\u529f", "infoAlert": "\u4fe1\u606f", "warningAlert": "\u8b66\u544a", "errorAlert": "\u9519\u8bef", "extractionCode": "\u7f51\u76d8\u63d0\u53d6\u7801\u5df2\u590d\u5236\uff0c\u70b9\u201c\u786e\u5b9a\u201d\u8fdb\u5165\u4e0b\u8f7d\u9875\u9762\u3002" };/* ]]> */</script>
     <script type="text/javascript" src="js/app.min.js" id="appjs-js"></script>
-    <script type="text/javascript" src="js/TCaptcha.js" id="captcha-js"></script>
-    <script type="text/javascript" src="js/comment-reply.min.js" id="comment-reply-js"></script>
-    <script type="text/javascript" src="js/comments-ajax.js" id="comments-ajax-js"></script>
-    <script async="" src="js/he-simple-common.js"></script>
-
 </body>
-
 </html>
