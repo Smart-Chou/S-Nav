@@ -22,10 +22,6 @@
 
 ![移动端预览](https://s1.ax1x.com/2020/03/14/8MV6Ve.jpg)
 
-## GIF示例效果
-
-![简单搜索](https://i.loli.net/2021/01/19/JsV34pBOcTbZk79.gif)
-
 > （图片效果，以实际页面为准）
 
 ---
@@ -46,33 +42,3 @@
 - font-awesome：<https://fontawesome.com/>
 - 知心天气：<https://www.seniverse.com/>
 - 天气API地址: <https://dev.qweather.com/widget/>
-
-### 背景图
-
-已默认添加随机加载bing背景，不需要刻意在index.php中删除；
-
-如使用自定义背景，可以删除bing背景后在页面内添加以下代码：
-
-```html
-<style> 
-   body{background:url("https://cn.bing.com//th?id=OHR.HuntsMesa_JA-JP3140979616_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp") no-repeat center/cover;}
-</style>
-```
-
-- **原项目：** <https://github.com/5iux/sou>  
-
-- **修改版**  
-  - [**v1**](https://github.com/yeetime/sou2/tree/v1)：使用其前端样式，重写部分代码，去除了不需要的模块。  
-  - **v2**：侧栏结构修改，使用 cookie 简单实现了部分数据的可视化编辑。  
-
-## 预览
-
-![Alone 导航](https://cdn.jsdelivr.net/gh/yeetime/img/20200411182948.gif)
-
-![Alone 导航](https://cdn.jsdelivr.net/gh/yeetime/img/20200627095800.gif)
-
-> （图片效果，以实际页面为准）
-
-## 示例页面
-
-- <https://yeetime.top/sou2/>
