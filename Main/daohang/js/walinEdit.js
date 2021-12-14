@@ -25,4 +25,4 @@ const locale = {
     admin: '博主',
     word: '字',
     wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
-    };
+};
