@@ -58,3 +58,21 @@
    body{background:url("https://cn.bing.com//th?id=OHR.HuntsMesa_JA-JP3140979616_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp") no-repeat center/cover;}
 </style>
 ```
+
+- **原项目：** <https://github.com/5iux/sou>  
+
+- **修改版**  
+  - [**v1**](https://github.com/yeetime/sou2/tree/v1)：使用其前端样式，重写部分代码，去除了不需要的模块。  
+  - **v2**：侧栏结构修改，使用 cookie 简单实现了部分数据的可视化编辑。  
+
+## 预览
+
+![Alone 导航](https://cdn.jsdelivr.net/gh/yeetime/img/20200411182948.gif)
+
+![Alone 导航](https://cdn.jsdelivr.net/gh/yeetime/img/20200627095800.gif)
+
+> （图片效果，以实际页面为准）
+
+## 示例页面
+
+- <https://yeetime.top/sou2/>
