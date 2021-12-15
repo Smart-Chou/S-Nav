@@ -17,6 +17,15 @@
  * 版权所有，请勿删除！
  */
 
+$(document).ready(function() {
+  //菜单点击
+  $("#menu1").click(function(event) {
+      $(this).toggleClass('on');
+      $(".list").toggleClass('closed');
+      $(".mywth").toggleClass('hidden');
+  });
+});
+
 var storage = window.localStorage;
 var data = storage.data;
 var night = storage.night;
@@ -74,12 +83,8 @@ function rgb2hex(rgb) {
 // 添加书签
 $(function() {
   var bookmark = {
-    data: [{
-      name: '开发日志',
-      link: 'http://kksan.top/posts/12023/',
-      box_shadow: '#F18033',
-      icon: 'img/log.png',
-    }, {
+    data: [
+    {
       name: '酷安',
       link: 'https://www.coolapk.com',
       box_shadow: '#11B063',
@@ -99,11 +104,6 @@ $(function() {
       link: 'https://www.zhihu.com/',
       box_shadow: '#0078D8',
       icon: 'img/zhihulogo.png',
-    }, {
-      name: '小米商城',
-      link: 'https://www.mi.com/',
-      box_shadow: '#F57923',
-      icon: 'img/mi.png',
     }, {
       name: 'unsplash',
       link: 'https://unsplash.com/',
@@ -144,16 +144,6 @@ $(function() {
       link: 'https://www.dgtle.com/',
       box_shadow: '#62677b',
       icon: 'img/shuziweiba.png',
-    }, {
-      name: '疫情跟踪',
-      link: 'https://ncov.dxy.cn/ncovh5/view/pneumonia',
-      box_shadow: '#7C5DC7',
-      icon: 'img/ding.png',
-    }, {
-      name: '疫情辟谣',
-      link: 'https://vp.fact.qq.com/home',
-      box_shadow: '#00A0E9',
-      icon: 'img/true.png',
     }]
   }
   for (var i = 0; i < bookmark.data.length; i++) {
@@ -171,13 +161,6 @@ $(function() {
 $(function() {
   var search = {
     data: [{
-      name: 'baidu',
-      icon: 'img/baidu-xs.png',
-      searchlink: 'https://www.baidu.com/s',
-      searchname: 'wd',
-      color: '#3245df',
-      placeholder: '百度一下...'
-    }, {
       name: 'google',
       icon: 'img/google-xs.png',
       searchlink: 'https://www.google.com/search',
@@ -185,19 +168,19 @@ $(function() {
       color: '#4285f4',
       placeholder: '咕噜咕噜...'
     }, {
+      name: 'baidu',
+      icon: 'img/baidu-xs.png',
+      searchlink: 'https://www.baidu.com/s',
+      searchname: 'wd',
+      color: '#3245df',
+      placeholder: '百度一下...'
+    }, {
       name: 'bing',
       icon: 'img/bing-xs.png',
       searchlink: 'https://cn.bing.com/search',
       searchname: 'q',
       color: '#00868B',
       placeholder: 'Bing搜索...'
-    }, {
-      name: 'yahoo',
-      icon: 'img/yahoo-xs.png',
-      searchlink: 'https://search.yahoo.com/search',
-      searchname: 'p',
-      color: '#5f01d1',
-      placeholder: 'Yahoo~'
     }, {
       name: 'magi',
       icon: 'img/magi-xs.png',
@@ -227,47 +210,12 @@ $(function() {
       color: '#de5833',
       placeholder: '嘎嘎嘎...'
     }, {
-      name: 'doge',
-      icon: 'img/doge-xs.png',
-      searchlink: 'https://www.dogedoge.com/results',
-      searchname: 'q',
-      color: '#ffca74',
-      placeholder: '手动狗头.jpg'
-    }, {
       name: 'wechat',
       icon: 'img/wechat-xs.png',
       searchlink: 'https://weixin.sogou.com/weixin',
       searchname: 'query',
       color: '#2ca43a',
       placeholder: '搜微信文章...'
-    }, {
-      name: 'seeres',
-      icon: 'img/seeres-xs.png',
-      searchlink: 'https://seeres.com/search',
-      searchname: 'q',
-      color: '#414baa',
-      placeholder: 'private search...'
-    }, {
-      name: 'quark',
-      icon: 'img/quark-xs.png',
-      searchlink: 'https://quark.sm.cn/s',
-      searchname: 'q',
-      color: '#6182f6',
-      placeholder: '夸克搜索...'
-    }, {
-      name: 'taobao',
-      icon: 'img/taobao-xs.png',
-      searchlink: 'https://s.taobao.com/search',
-      searchname: 'q',
-      color: '#FF5B00',
-      placeholder: '淘，我喜欢...'
-    }, {
-      name: 'jingdong',
-      icon: 'img/jingdong-xs.png',
-      searchlink: 'https://search.jd.com/Search',
-      searchname: 'keyword',
-      color: '#F30213',
-      placeholder: '多，快，好，省...'
     }, {
       name: 'bilibili',
       icon: 'img/bilibili-xs.png',
@@ -285,7 +233,7 @@ $(function() {
     }, {
       name: 'toutiao',
       icon: 'img/toutiao-xs.png',
-      searchlink: 'https://m.toutiao.com/search',
+      searchlink: 'https://so.toutiao.com/search',
       searchname: 'keyword',
       color: '#ed2f28',
       placeholder: '搜今日头条...'
@@ -296,20 +244,6 @@ $(function() {
       searchname: 'q',
       color: '#e6162d',
       placeholder: '搜微博...'
-    }, {
-      name: 'zhihu',
-      icon: 'img/zhihu-xs.png',
-      searchlink: 'https://www.zhihu.com/search',
-      searchname: 'q',
-      color: '#1087eb',
-      placeholder: '我们都是有问题的人...'
-    }, {
-      name: 'kuaidi',
-      icon: 'img/kuaidi-xs.png',
-      searchlink: 'https://m.kuaidi100.com/result.jsp',
-      searchname: 'nu',
-      color: '#317EE7',
-      placeholder: '搜快递...'
     }]
   }
   for (var i = 0; i < search.data.length; i++) { //添加搜索按钮
@@ -345,54 +279,6 @@ $(function() {
     }
   })
   // 搜索相关结束
-
-  // 夜间模式
-  $('#night').click(function() {
-    if (rgb2hex($('#main').css('background-color')) == '#ffffff') {
-      $('#main').css('background-color', '#2f2f33'); //主界面
-      $('#menu').css('background-color', '#5C5C5C'); //侧栏
-      document.getElementById("night").innerHTML = "日间模式";
-      li.css({
-        "background-color": "#575757",
-        "color": "#DBDBDB"
-      });
-      blockquote.css('color', '#DBDBDB');
-    } else if (rgb2hex($('#main').css('background-color')) == '#2f2f33') {
-      $('#main').css('background-color', '#ffffff'); //主界面
-      $('#menu').css('background-color', '#EDEDED'); //侧栏
-      document.getElementById("night").innerHTML = "夜间模式";
-      li.css({
-        "background-color": "#E3E3E3",
-        "color": "black"
-      });
-      blockquote.css('color', 'black');
-    }
-    var mainbg = rgb2hex($('#main').css('background-color'));
-    var menubg = rgb2hex($('#menu').css('background-color'));
-    var inner = document.getElementById("night").innerHTML;
-    var libg = rgb2hex(li.css('background-color'));
-    var lico = rgb2hex(li.css('color'));
-    var blockquoteco = rgb2hex(blockquote.css('color'));
-    // storage.night = [mainbg, menubg, inner, libg, lico, blockquoteco];
-    // localStorage.clear()
-  })
-  // 夜间模式结束
-
-  // 更新提示框
-  $('#closealert').click(function() {
-    var version = '4.1.1';
-    localStorage.closealert = [version];
-  })
-  // 更新提示框结束
-
-})
-
-// 显示/干掉壁纸
-var width = $(document).width();
-$('#bg').click(function() {
-  width < 768 ? ($('#main').css('background-image') == 'none' ? ($('#main').css('background-image', 'url(img/bg-xs.jpg)')) : ($('#main').css('background-image', 'none'))) : $('#main').css('background-image') == 'none' ? ($('#main').css('background-image', 'url(img/bg.jpg)')) : ($('#main').css('background-image', 'none'));
-  var background = $('#main').css('background-image');
-  storage.bg = [background];
 })
 
 //检查搜索框是否为空
@@ -427,39 +313,6 @@ if (time < 5) {
 function select() {
   $('#folder').css('display') == 'block' ? ($('#folder').css('display', 'none'), $('#nav').css('display', 'block'), document.getElementById("Select").innerHTML = "<hr>搜索引擎 <img src='img/search-change.svg?v=2ae7ab8'>") : ($('#nav').css('display', 'none'), $('#folder').css('display', 'block'), document.getElementById("Select").innerHTML = "<hr>书签 <img src='img/search-change.svg?v=2ae7ab8'>");
 }
-
-// 天气插件
-(function(a, h, g, f, e, d, c, b) {
-  b = function() {
-    d = h.createElement(g);
-    c = h.getElementsByTagName(g)[0];
-    d.src = e;
-    d.charset = "utf-8";
-    d.async = 1;
-    c.parentNode.insertBefore(d, c)
-  };
-  a["SeniverseWeatherWidgetObject"] = f;
-  a[f] || (a[f] = function() {
-    (a[f].q = a[f].q || []).push(arguments)
-  });
-  a[f].l = +new Date();
-  if (a.attachEvent) {
-    a.attachEvent("onload", b)
-  } else {
-    a.addEventListener("load", b, false)
-  }
-}(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
-window.SeniverseWeatherWidget('show', {
-  flavor: "bubble",
-  location: "WX4FBXXFKE4F",
-  geolocation: true,
-  language: "auto",
-  unit: "c",
-  theme: "auto",
-  token: "e14489a8-9a7e-477d-9c6c-b4b390175cca",
-  hover: "enabled",
-  container: "tp-weather-widget"
-})
 
 // 搜索提示词
 class searchHint {
@@ -509,24 +362,3 @@ class searchHint {
   }
 }
 const jsonp = new searchHint();
-
-//导航、引擎选择器结束
-
-/*
- * ALL RIGHTS RESERVED.
- *
- * 作者：酷安@_小K同學
- * 项目开始日期：2020年01月26日
- * 上次修改时间：2020年03月24日
- * 开发日志：https://kksan.top/posts/12023
- *
- * 开源相关：
- * Github：https://github.com/Jackie1123/aNavigation
- * CSSFX：https://cssfx.netlify.com
- * jQuery：https://jquery.com
- * slideout：https://slideout.js.org
- * bootstrap：https://getbootstrap.com
- * font-awesome：https://fontawesome.com
- *
- * 版权所有，请勿删除！
- */
