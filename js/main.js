@@ -88,62 +88,62 @@ $(function() {
       name: '酷安',
       link: 'https://www.coolapk.com',
       box_shadow: '#11B063',
-      icon: 'img/coolapk.png',
+      icon: 'ico/coolapk.png',
     }, {
       name: 'Via插件',
       link: 'http://via-app.cn',
       box_shadow: '#FA7199',
-      icon: 'img/via.png',
+      icon: 'ico/via.png',
     }, {
       name: '今日热榜',
       link: 'https://tophub.today/',
       box_shadow: '#F2584A',
-      icon: 'img/headline.png',
+      icon: 'ico/headline.png',
     }, {
       name: '知乎',
       link: 'https://www.zhihu.com/',
       box_shadow: '#0078D8',
-      icon: 'img/zhihulogo.png',
+      icon: 'ico/zhihulogo.png',
     }, {
       name: 'unsplash',
       link: 'https://unsplash.com/',
       box_shadow: '#2C2C2C',
-      icon: 'img/unsplash.png',
+      icon: 'ico/unsplash.png',
     }, {
       name: '豆瓣',
       link: 'https://www.douban.com/',
       box_shadow: '#37bf4c',
-      icon: 'img/douban.png',
+      icon: 'ico/douban.png',
     }, {
       name: '虎扑',
       link: 'https://www.hupu.com/',
       box_shadow: '#c01d2f',
-      icon: 'img/hupu.png',
+      icon: 'ico/hupu.png',
     }, {
       name: '斗鱼',
       link: 'https://www.douyu.com/',
       box_shadow: '#fe7700',
-      icon: 'img/douyu.png',
+      icon: 'ico/douyu.png',
     }, {
       name: 'XDA',
       link: 'https://www.xda-developers.com/',
       box_shadow: '#AC6E2F',
-      icon: 'img/xda.png',
+      icon: 'ico/xda.png',
     }, {
       name: '少数派',
       link: 'https://sspai.com/',
       box_shadow: '#D7191A',
-      icon: 'img/sspai.png',
+      icon: 'ico/sspai.png',
     }, {
       name: '小众软件',
       link: 'https://www.appinn.com/',
       box_shadow: '#3279ea',
-      icon: 'img/xiaozhong.png',
+      icon: 'ico/xiaozhong.png',
     }, {
       name: '数字尾巴',
       link: 'https://www.dgtle.com/',
       box_shadow: '#62677b',
-      icon: 'img/shuziweiba.png',
+      icon: 'ico/shuziweiba.png',
     }]
   }
   for (var i = 0; i < bookmark.data.length; i++) {
@@ -162,84 +162,84 @@ $(function() {
   var search = {
     data: [{
       name: 'google',
-      icon: 'img/google-xs.png',
+      icon: 'ico/google-xs.png',
       searchlink: 'https://www.google.com/search',
       searchname: 'q',
       color: '#4285f4',
       placeholder: '咕噜咕噜...'
     }, {
       name: 'baidu',
-      icon: 'img/baidu-xs.png',
+      icon: 'ico/baidu-xs.png',
       searchlink: 'https://www.baidu.com/s',
       searchname: 'wd',
       color: '#3245df',
       placeholder: '百度一下...'
     }, {
       name: 'bing',
-      icon: 'img/bing-xs.png',
+      icon: 'ico/bing-xs.png',
       searchlink: 'https://cn.bing.com/search',
       searchname: 'q',
       color: '#00868B',
       placeholder: 'Bing搜索...'
     }, {
       name: 'magi',
-      icon: 'img/magi-xs.png',
+      icon: 'ico/magi-xs.png',
       searchlink: 'https://magi.com/search',
       searchname: 'q',
       color: 'black',
       placeholder: 'Mag[i]...'
     }, {
       name: 'miji',
-      icon: 'img/miji-xs.png',
+      icon: 'ico/miji-xs.png',
       searchlink: 'https://mijisou.com/',
       searchname: 'q',
       color: '#575757',
       placeholder: '不追踪你的搜索引擎...'
     }, {
       name: 'sougou',
-      icon: 'img/sougou-xs.png',
+      icon: 'ico/sougou-xs.png',
       searchlink: 'https://www.sogou.com/web',
       searchname: 'query',
       color: '#f94c18',
       placeholder: '搜狗搜索...'
     }, {
       name: 'duckduckgo',
-      icon: 'img/duckduckgo-xs.png',
+      icon: 'ico/duckduckgo-xs.png',
       searchlink: 'https://duckduckgo.com',
       searchname: 'q',
       color: '#de5833',
       placeholder: '嘎嘎嘎...'
     }, {
       name: 'wechat',
-      icon: 'img/wechat-xs.png',
+      icon: 'ico/wechat-xs.png',
       searchlink: 'https://weixin.sogou.com/weixin',
       searchname: 'query',
       color: '#2ca43a',
       placeholder: '搜微信文章...'
     }, {
       name: 'bilibili',
-      icon: 'img/bilibili-xs.png',
+      icon: 'ico/bilibili-xs.png',
       searchlink: 'https://search.bilibili.com/all',
       searchname: 'keyword',
       color: '#e47494',
       placeholder: 'b站是一个学习网站...'
     }, {
       name: 'github',
-      icon: 'img/github-xs.png',
+      icon: 'ico/github-xs.png',
       searchlink: 'https://github.com/search',
       searchname: 'q',
       color: '#24292e',
       placeholder: '全球最大的开源社区...'
     }, {
       name: 'toutiao',
-      icon: 'img/toutiao-xs.png',
+      icon: 'ico/toutiao-xs.png',
       searchlink: 'https://so.toutiao.com/search',
       searchname: 'keyword',
       color: '#ed2f28',
       placeholder: '搜今日头条...'
     }, {
       name: 'weibo',
-      icon: 'img/weibo-xs.png',
+      icon: 'ico/weibo-xs.png',
       searchlink: 'https://s.weibo.com/weibo',
       searchname: 'q',
       color: '#e6162d',
@@ -256,12 +256,12 @@ $(function() {
     var id = e.target.id;
     for (var i = 0; i < search.data.length; i++) {
       if (id == search.data[i].name) {
-        document.getElementById("state").innerHTML = "<a href='folder://'><img style='width:300px;' src='img/" + search.data[i].name + ".png'></a>";
+        document.getElementById("state").innerHTML = "<a href='folder://'><img style='width:300px;' src='ico/" + search.data[i].name + ".png'></a>";
         $('#submitButton').css('background-color', search.data[i].color); //按钮bg
         $('#Select').css('color', search.data[i].color); //选择器
         $('#nav').css('display', 'none');
         $('#folder').css('display', 'block');
-        document.getElementById("Select").innerHTML = "<hr>书签 <img src='img/search-change.svg?v=2ae7ab8'>";
+        document.getElementById("Select").innerHTML = "<hr>书签 <img src='ico/search-change.svg?v=2ae7ab8'>";
         $("#inputText").attr("placeholder", search.data[i].placeholder);
         $("#form").attr("action", search.data[i].searchlink);
         $("#inputText").attr("name", search.data[i].searchname);
@@ -311,7 +311,7 @@ if (time < 5) {
 
 //导航、引擎选择器
 function select() {
-  $('#folder').css('display') == 'block' ? ($('#folder').css('display', 'none'), $('#nav').css('display', 'block'), document.getElementById("Select").innerHTML = "<hr>搜索引擎 <img src='img/search-change.svg?v=2ae7ab8'>") : ($('#nav').css('display', 'none'), $('#folder').css('display', 'block'), document.getElementById("Select").innerHTML = "<hr>书签 <img src='img/search-change.svg?v=2ae7ab8'>");
+  $('#folder').css('display') == 'block' ? ($('#folder').css('display', 'none'), $('#nav').css('display', 'block'), document.getElementById("Select").innerHTML = "<hr>搜索引擎 <img src='ico/search-change.svg?v=2ae7ab8'>") : ($('#nav').css('display', 'none'), $('#folder').css('display', 'block'), document.getElementById("Select").innerHTML = "<hr>书签 <img src='ico/search-change.svg?v=2ae7ab8'>");
 }
 
 // 搜索提示词
