@@ -95,7 +95,7 @@ ul {
         background-size: cover;
     }
     .search-box {
-        margin: 0;
+        margin: 60px 0 0;
     }
     .inputDiv {
         margin: 30px 20px 0;
@@ -108,10 +108,10 @@ ul {
         background-size: cover;
     }
     .search-box {
-        margin: 20px 70px 0 70px;
+        margin: 140px 270px 0;
     }
     .inputDiv {
-        margin: 30px 130px 0;
+        margin: 30px 20px 0;
     }
 }
 #main {
@@ -530,6 +530,20 @@ svg.icon {
     #menu1 {
         display: none;
     }
+    #footer {
+        display: none;
+    }
+}
+
+#footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    color: rgb(255, 0, 0);
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
 }
 
 ::-webkit-scrollbar {

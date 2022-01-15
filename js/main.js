@@ -261,7 +261,7 @@ $(function() {
         $('#Select').css('color', search.data[i].color); //选择器
         $('#nav').css('display', 'none');
         $('#folder').css('display', 'block');
-        document.getElementById("Select").innerHTML = "<hr>书签 <img src='ico/search-change.svg?v=2ae7ab8'>";
+        document.getElementById("Select").innerHTML = "<hr>搜索引擎 <img src='ico/search-change.svg?v=2ae7ab8'>";
         $("#inputText").attr("placeholder", search.data[i].placeholder);
         $("#form").attr("action", search.data[i].searchlink);
         $("#inputText").attr("name", search.data[i].searchname);
@@ -311,7 +311,7 @@ if (time < 5) {
 
 //导航、引擎选择器
 function select() {
-  $('#folder').css('display') == 'block' ? ($('#folder').css('display', 'none'), $('#nav').css('display', 'block'), document.getElementById("Select").innerHTML = "<hr>搜索引擎 <img src='ico/search-change.svg?v=2ae7ab8'>") : ($('#nav').css('display', 'none'), $('#folder').css('display', 'block'), document.getElementById("Select").innerHTML = "<hr>书签 <img src='ico/search-change.svg?v=2ae7ab8'>");
+  $('#folder').css('display') == 'block' ? ($('#folder').css('display', 'none'), $('#nav').css('display', 'block'), document.getElementById("Select").innerHTML = "<hr>书签 <img src='ico/search-change.svg?v=2ae7ab8'>") : ($('#nav').css('display', 'none'), $('#folder').css('display', 'block'), document.getElementById("Select").innerHTML = "<hr>搜索引擎 <img src='ico/search-change.svg?v=2ae7ab8'>");
 }
 
 // 搜索提示词
