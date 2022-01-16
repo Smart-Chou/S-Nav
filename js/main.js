@@ -8,12 +8,6 @@
  *
  * 开源相关：
  * Github：https://github.com/Jackie1123/aNavigation
- * CSSFX：https://cssfx.netlify.com
- * jQuery：https://jquery.com
- * slideout：https://slideout.js.org
- * bootstrap：https://getbootstrap.com
- * font-awesome：https://fontawesome.com
- *
  * 版权所有，请勿删除！
  */
 
@@ -22,7 +16,10 @@ $(document).ready(function() {
   $("#menu1").click(function(event) {
       $(this).toggleClass('on');
       $(".list").toggleClass('closed');
-      $(".mywth").toggleClass('hidden');
+  });
+  $("#main").click(function(event) {
+      $(".on").removeClass('on');
+      $(".list").addClass('closed');
   });
 });
 
