@@ -21,6 +21,7 @@
         <link rel="stylesheet" id="iconfont-io-1-css" href="/css/font_1620678_18rbnd2homc.css" type="text/css" media="all" />
         <link rel="stylesheet" id="bootstrap-css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" type="text/css" media="all" />
         <link rel="stylesheet" id="style-css" href="/css/style.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="style-css" href="/css/add.css" type="text/css" media="all" />
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" id="jquery-js"></script>
         <script src="//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js"></script>
         <script src="/js/walinEdit.js"></script>
@@ -53,6 +54,27 @@
                 document.body.classList.add('io-black-mode');
             }
         </script>
+        <div id="loading">
+            <div class="loader">
+                <span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <div class="base">
+                    <span></span>
+                    <div class="face"></div>
+                </div>
+            </div>
+            <div class="longfazers">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p class="loader-text">LOADING</p>
+        </div>
         <div class="page-container" style="transform: none">
             <div id="sidebar" class="sticky sidebar-nav fade">
                 <div class="modal-dialog h-100 sidebar-nav-inner">
@@ -362,7 +384,7 @@
                                                 el: '#waline',
                                                 serverURL: 'https://s-nav-waline.vercel.app/',
                                                 lang: 'zh-CN',
-                                                visitor: 'true',
+                                                dark: 'auto',
                                                 emoji: ['https://cdn.jsdelivr.net/gh/walinejs/emojis/tieba', 'https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo', 'https://cdn.jsdelivr.net/gh/walinejs/emojis/qq', 'https://cdn.jsdelivr.net/gh/walinejs/emojis/alus', 'https://cdn.jsdelivr.net/gh/walinejs/emojis/bilibili'],
                                                 meta: ['nick', 'mail', 'link'],
                                                 requiredMeta: ['nick', 'mail'],

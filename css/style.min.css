@@ -94,7 +94,7 @@ i {
     display: flex;
 }
 .content-site {
-    padding: 0 15px;
+    padding: 70px 15px 0;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -158,7 +158,7 @@ i {
 }
 @media (min-width: 768px) {
     .content-site {
-        padding: 0 30px;
+        padding: 70px 30px 0;
     }
 }
 .alignnone {
@@ -5219,4 +5219,469 @@ input.nav-link[readonly] {
         height: 2px;
         width: 2px;
     }
+}
+
+/*Waline 暗黑模式*/
+:root {
+    /* 字体大小 */
+    --waline-font-size: 16px;
+
+    /* 常规颜色 */
+    --waline-white: #fff;
+    --waline-light-grey: #999;
+    --waline-dark-grey: #666;
+
+    /* 主题色 */
+    --waline-theme-color: #27ae60;
+    --waline-active-color: #2ecc71;
+
+    /* 布局颜色 */
+    --waline-text-color: #444;
+    --waline-bgcolor: #fff;
+    --waline-bgcolor-light: #f8f8f8;
+    --waline-bgcolor-hover: #f0f0f0;
+    --waline-border-color: #ddd;
+    --waline-disable-bgcolor: #f8f8f8;
+    --waline-disable-color: #bbb;
+    --waline-code-bgcolor: #282c34;
+
+    /* 特殊颜色 */
+    --waline-bq-color: #f0f0f0;
+
+    /* 头像 */
+    --waline-avatar-size: 3.25rem;
+    --waline-mobile-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+
+    /* 徽章 */
+    --waline-badge-color: #3498db;
+    --waline-badge-font-size: 0.775em;
+
+    /* 信息 */
+    --waline-info-bgcolor: #f8f8f8;
+    --waline-info-color: #999;
+    --waline-info-font-size: 0.625em;
+
+    /* 渲染选择 */
+    --waline-border: 1px solid var(--waline-border-color);
+    --waline-avatar-radius: 50%;
+    --waline-box-shadow: none;
+}
+darkmode-selector {
+    /* 常规颜色 */
+    --waline-white: #000;
+    --waline-light-grey: #666;
+    --waline-dark-grey: #999;
+
+    /* 布局颜色 */
+    --waline-text-color: #888;
+    --waline-bgcolor: #1e1e1e;
+    --waline-bgcolor-light: #272727;
+    --waline-border-color: #333;
+    --waline-disable-bgcolor: #444;
+    --waline-disable-color: #272727;
+
+    /* 特殊颜色 */
+    --waline-bq-color: #272727;
+
+    /* 其他颜色 */
+    --waline-info-bgcolor: #272727;
+    --waline-info-color: #666;
+}
+.io-black-mode #waline .vpanel {
+    color: #aaa;
+    background: rgba(54, 55, 56, 0.4);
+}
+.io-black-mode #waline .vpanel:hover {
+    color: #fff;
+}
+
+/*打开前动画*/
+.loader {
+    position: absolute;
+    top: 50%;
+    margin-left: -50px;
+    left: 50%;
+    animation: speeder 0.4s linear infinite;
+}
+.loader-text {
+    position: absolute;
+    text-transform: uppercase;
+    left: 50%;
+    top: 53%;
+    margin-left: -20px;
+}
+.loader > span {
+    height: 5px;
+    width: 35px;
+    background: #000;
+    position: absolute;
+    top: -19px;
+    left: 60px;
+    border-radius: 2px 10px 1px 0;
+}
+.base span {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 100px solid #000;
+    border-bottom: 6px solid transparent;
+}
+.base span:before {
+    content: '';
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    right: -110px;
+    top: -16px;
+}
+.base span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0 solid transparent;
+    border-right: 55px solid #000;
+    border-bottom: 16px solid transparent;
+    top: -16px;
+    right: -98px;
+}
+.face {
+    position: absolute;
+    height: 12px;
+    width: 20px;
+    background: #000;
+    border-radius: 20px 20px 0 0;
+    transform: rotate(-40deg);
+    right: -125px;
+    top: -15px;
+}
+.face:after {
+    content: '';
+    height: 12px;
+    width: 12px;
+    background: #000;
+    right: 4px;
+    top: 7px;
+    position: absolute;
+    transform: rotate(40deg);
+    transform-origin: 50% 50%;
+    border-radius: 0 0 0 2px;
+}
+.loader > span > span {
+    width: 30px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    animation: fazer1 0.2s linear infinite;
+}
+.loader > span > span:nth-child(2) {
+    top: 3px;
+    animation: fazer2 0.4s linear infinite;
+}
+.loader > span > span:nth-child(3) {
+    top: 1px;
+    animation: fazer3 0.4s linear infinite;
+    animation-delay: -1s;
+}
+.loader > span > span:nth-child(4) {
+    top: 4px;
+    animation: fazer4 1s linear infinite;
+    animation-delay: -1s;
+}
+@keyframes fazer1 {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -80px;
+        opacity: 0;
+    }
+}
+@keyframes fazer2 {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100px;
+        opacity: 0;
+    }
+}
+@keyframes fazer3 {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -50px;
+        opacity: 0;
+    }
+}
+@keyframes fazer4 {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -150px;
+        opacity: 0;
+    }
+}
+@keyframes speeder {
+    0% {
+        transform: translate(2px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -3px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-2px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 3px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-1px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-2px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(2px, 1px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+.longfazers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.longfazers span {
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    background: #000;
+}
+.longfazers span:nth-child(1) {
+    top: 20%;
+    animation: lf 0.6s linear infinite;
+    animation-delay: -5s;
+}
+.longfazers span:nth-child(2) {
+    top: 40%;
+    animation: lf2 0.8s linear infinite;
+    animation-delay: -1s;
+}
+.longfazers span:nth-child(3) {
+    top: 60%;
+    animation: lf3 0.6s linear infinite;
+}
+.longfazers span:nth-child(4) {
+    top: 80%;
+    animation: lf4 0.5s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes lf {
+    0% {
+        left: 200%;
+    }
+    100% {
+        left: -200%;
+        opacity: 0;
+    }
+}
+@keyframes lf2 {
+    0% {
+        left: 200%;
+    }
+    100% {
+        left: -200%;
+        opacity: 0;
+    }
+}
+@keyframes lf3 {
+    0% {
+        left: 200%;
+    }
+    100% {
+        left: -100%;
+        opacity: 0;
+    }
+}
+@keyframes lf4 {
+    0% {
+        left: 200%;
+    }
+    100% {
+        left: -100%;
+        opacity: 0;
+    }
+}
+.io-black-mode .loader > span {
+    background: #f1404b;
+}
+.io-black-mode .base span {
+    border-right-color: #f1404b;
+}
+.io-black-mode .base span:before {
+    background: #f1404b;
+}
+.io-black-mode .base span:after {
+    border-right-color: #f1404b;
+}
+.io-black-mode .face {
+    background: #f1404b;
+}
+.io-black-mode .face:after {
+    background: #f1404b;
+}
+.io-black-mode .loader > span > span {
+    background: #f1404b;
+}
+.io-black-mode .longfazers span {
+    background: #f1404b;
+}
+
+/*底部推荐*/
+@media (max-width: 520px) {
+    .tuijian {
+        display: none;
+    }
+    .random {
+        display: none;
+    }
+}
+.tuijian {
+    overflow: hidden;
+    margin-top: 10px;
+    height: 100px;
+    border-radius: 5px 5px 0 0;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+.tuijian .tj {
+    list-style: none;
+}
+.tuijian .tj li.first-one {
+    margin-left: 0;
+}
+.tuijian .tj li a:hover {
+    background-color: #fff;
+    color: #f80;
+}
+.tuijian .tj li a {
+    float: left;
+    display: block;
+    overflow: hidden;
+    margin: 15px 0.78%;
+    width: 15.1%;
+    height: 70px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 70px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.random ul {
+    margin-left: -50px;
+    list-style: none;
+}
+.random ul li a {
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    width: 16.665%;
+    height: 100px;
+    color: #fff;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 100px;
+    opacity: 0.75;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.random {
+    overflow: hidden;
+    height: 300px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, 0.25);
+    text-align: center;
+}
+.random ul li a:hover {
+    font-size: 17px;
+    opacity: 1;
+}
+.random ul li .one {
+    width: 33.33%;
+    height: 300px;
+    background: #e7eff4 url(http://gogobody.gitee.io/onenav-tool/static/images/jktools.jpg);
+    background-size: cover;
+}
+.random ul li .two {
+    width: 33.33%;
+    background: #faebd7 url(http://gogobody.gitee.io/onenav-tool/static/images/r2.jpg);
+    background-size: cover;
+}
+.random ul li .three {
+    background: #f0f8ff url(http://gogobody.gitee.io/onenav-tool/static/images/r4.jpg);
+    background-size: cover;
+}
+.random ul li .four {
+    background: #faebd7 url(http://gogobody.gitee.io/onenav-tool/static/images/r3.jpg);
+    background-size: cover;
+}
+.random ul li .five {
+    background: #f0f8ff url(http://gogobody.gitee.io/onenav-tool/static/images/r8.jpg);
+    background-size: cover;
+}
+.random ul li .six {
+    background: #faebd7 url(http://gogobody.gitee.io/onenav-tool/static/images/r1.jpg);
+    background-size: cover;
+}
+.random {
+    margin-bottom: 50px;
+}
+.random ul li .seven {
+    width: 33.33%;
+    background: #f0f8ff url(http://gogobody.gitee.io/onenav-tool/static/images/r2.jpg);
+    background-size: cover;
+}
+.random ul li .eight {
+    width: 33.33%;
+    background: #faebd7 url(http://gogobody.gitee.io/onenav-tool/static/images/r4.jpg);
+    background-size: cover;
+}
+.random ul li .nine {
+    background: #f0f8ff url(http://gogobody.gitee.io/onenav-tool/static/images/r7.jpg);
+    background-size: cover;
+}
+.random ul li .ten {
+    background: #faebd7 url(http://gogobody.gitee.io/onenav-tool/static/images/r8.jpg);
+    background-size: cover;
+}
+
+/*cookie*/
+.io-black-mode #cookie .login-tips {
+    color: #aaa;
+    background: rgba(54, 55, 56, 0.4);
+}
+.io-black-mode #cookie .login-tips:hover {
+    color: #fff;
 }
