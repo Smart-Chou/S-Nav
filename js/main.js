@@ -139,35 +139,10 @@ $(function() {
       box_shadow: '#F2584A',
       icon: 'ico/headline.png',
     }, {
-      name: '知乎',
-      link: 'https://www.zhihu.com/',
-      box_shadow: '#0078D8',
-      icon: 'ico/zhihulogo.png',
-    }, {
-      name: 'unsplash',
-      link: 'https://unsplash.com/',
-      box_shadow: '#2C2C2C',
-      icon: 'ico/unsplash.png',
-    }, {
-      name: '豆瓣',
-      link: 'https://www.douban.com/',
-      box_shadow: '#37bf4c',
-      icon: 'ico/douban.png',
-    }, {
       name: '虎扑',
       link: 'https://www.hupu.com/',
       box_shadow: '#c01d2f',
       icon: 'ico/hupu.png',
-    }, {
-      name: '斗鱼',
-      link: 'https://www.douyu.com/',
-      box_shadow: '#fe7700',
-      icon: 'ico/douyu.png',
-    }, {
-      name: 'XDA',
-      link: 'https://www.xda-developers.com/',
-      box_shadow: '#AC6E2F',
-      icon: 'ico/xda.png',
     }, {
       name: '少数派',
       link: 'https://sspai.com/',
@@ -178,11 +153,6 @@ $(function() {
       link: 'https://www.appinn.com/',
       box_shadow: '#3279ea',
       icon: 'ico/xiaozhong.png',
-    }, {
-      name: '数字尾巴',
-      link: 'https://www.dgtle.com/',
-      box_shadow: '#62677b',
-      icon: 'ico/shuziweiba.png',
     }]
   }
   for (var i = 0; i < bookmark.data.length; i++) {

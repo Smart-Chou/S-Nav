@@ -334,3 +334,13 @@ blockquote {
         opacity: 1;
     }
 }
+#footer a {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    color: rgb(143, 204, 194);
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
