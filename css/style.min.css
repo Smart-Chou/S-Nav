@@ -5676,12 +5676,3 @@ darkmode-selector {
     background: #faebd7 url(http://gogobody.gitee.io/onenav-tool/static/images/r8.jpg);
     background-size: cover;
 }
-
-/*cookie*/
-.io-black-mode #cookie .login-tips {
-    color: #aaa;
-    background: rgba(54, 55, 56, 0.4);
-}
-.io-black-mode #cookie .login-tips:hover {
-    color: #fff;
-}

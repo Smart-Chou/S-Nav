@@ -326,7 +326,7 @@
                     <div class="s-search">
                         <div id="search" class="s-search mx-auto">
                             <div class="big-title text-center mb-3 mb-md-5 mt-2">
-                                <h2 class="h1" style="letter-spacing: 6px;">欢迎来到「简单导航」</h2>
+                                <h2 class="h1" style="letter-spacing: 6px">欢迎来到「简单导航」</h2>
                             </div>
                             <div id="search-list-menu">
                                 <div class="s-type text-center overflow-x-auto">
@@ -5090,93 +5090,18 @@
                                 }
                             </style>
                         </div>
-                    </div>
-                    <div id="cookie">
-                        <style>
-                            footer.main-footer {
-                                padding: 20px 30px;
-                                margin-top: 0;
-                                margin-bottom: 80px;
-                            }
-                            #footer-tools {
-                                position: fixed;
-                                bottom: 80px;
-                                right: 20px;
-                            }
-                            @media (max-width: 768px) {
-                                .login-tips {
-                                    left: 0;
-                                }
-                                footer.main-footer {
-                                    padding: 20px 30px;
-                                    margin-top: 0;
-                                    margin-bottom: 110px;
-                                }
-                                #footer-tools {
-                                    position: fixed;
-                                    bottom: 110px;
-                                    right: 20px;
-                                }
-                            }
-                            @media (min-width: 768px) {
-                                .login-tips {
-                                    left: 190px;
-                                }
-                                .sidebar-nav.mini-sidebar ~ .main-content .login-tips {
-                                    left: 60px !important;
-                                }
-                            }
-                            .login-tips {
-                                position: fixed;
-                                bottom: -2px;
-                                right: 0;
-                                z-index: 22;
-                                background: rgba(255, 255, 255, 0.8);
-                                color: rgba(0, 0, 0, 0.6);
-                                backdrop-filter: blur(10px);
-                                text-align: center;
-                                padding: 14px 0;
-                                transition: all 0.3s;
-                            }
-                            .login-tips .go-icon {
-                                color: rgba(0, 0, 0, 0.6);
-                                font-size: 20px;
-                                vertical-align: middle;
-                            }
-                            .login-tips .login-btn {
-                                display: inline-block;
-                                vertical-align: baseline;
-                                height: 32px;
-                                padding: 0 20px;
-                                background-color: #f1404b;
-                                color: #ffffff;
-                                vertical-align: middle;
-                                margin-left: 16px;
-                                border-radius: 4px;
-                                line-height: 32px;
-                                text-align: center;
-                                font-size: 14px;
-                                margin: 8px 8px;
-                            }
-                            .harry-hide {
-                                display: none;
-                            }
-                        </style>
-                        <script>
-                            function closeLoginTipsDom(t) {
-                                $(t).parents('.login-tips').addClass('harry-hide');
-                                $('footer.main-footer').css('margin-bottom', '0px');
-                                $('#footer-tools').css('bottom', '20px');
-                            }
-                        </script>
-                        <div class="login-tips">
-                            <center>
-                                <i class="go-icon io io-huojian"></i>
-                                <span style="margin-left: 20px; vertical-align: baseline; display: inline-block; font-size: 18px; font-weight: 700; vertical-align: middle; margin-left: 12px">一键登录开启个人书签等功能！</span>
-                                <a href="https://www.test.com" title="QQ快速登录" rel="nofollow" class="openlogin-qq-a" target="_blank"><i class="iconfont icon-qq login-btn"></i></a>
-                                <a href="https://www.test.com" class="login-btn" target="_blank">官方群聊</a>
-                            </center>
-                            <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(255, 255, 255, 0.61); width: 20px; height: 20px; cursor: pointer; border-radius: 20px" onclick="closeLoginTipsDom(this)"><i style="font-size: 12px; line-height: 20px; vertical-align: middle; margin-bottom: 8px; color: #f1404b" class="iconfont icon-close"></i></div>
+                        <div>
+                            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                            <span id="busuanzi_container_site_uv" style="display: none">
+                                访客总人数
+                                <span id="busuanzi_value_site_uv"></span>
+                                人
+                            </span>
+                            <span id="busuanzi_container_site_pv" style="display: none">
+                                本站总访问量
+                                <span id="busuanzi_value_site_pv"></span>
+                                次
+                            </span>
                         </div>
                     </div>
                 </footer>
