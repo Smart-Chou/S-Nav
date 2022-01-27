@@ -110,22 +110,21 @@ a {
     transition: 0.3s all;
 }
 .con .sou form .lg {
-        display: block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        left: 13px;
-        top: 10px;
-        border-radius: 50%;
-        overflow: hidden;
-        cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 13px;
+    top: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
 }
-
 
 .con .sou form .wd:focus {
     background: #fff;
     box-shadow: 0 0px 15px 0 rgba(32, 33, 36, 0.2);
-    border-color: #fff
+    border-color: #fff;
 }
 
 .con .sou form button {
@@ -143,21 +142,25 @@ a {
     color: #777;
 }
 
-.con .sou #word{
+.con .sou #word {
     width: calc(100% - 70px);
     border: 15px solid #f1f1f1;
     border-radius: 10px;
-    left:20px;
-    position: absolute;z-index: 500; top:65px;
+    left: 20px;
+    position: absolute;
+    z-index: 500;
+    top: 65px;
     background: #f1f1f1;
-    line-height: 30px; font-style: 16px;overflow: hidden;
-    display: none; 
+    line-height: 30px;
+    font-style: 16px;
+    overflow: hidden;
+    display: none;
 }
-.con .sou #word .li{
+.con .sou #word .li {
     cursor: pointer;
     color: #555;
 }
-.con .sou #word .li:hover{
+.con .sou #word .li:hover {
     color: #29f;
 }
 
@@ -236,7 +239,7 @@ a {
     right: 380px;
     background: #29f;
     border-radius: 25px;
-    box-shadow: 0 6px 8px rgba(36, 159, 253, .3);
+    box-shadow: 0 6px 8px rgba(36, 159, 253, 0.3);
 }
 
 #menu1.on i {
@@ -312,7 +315,7 @@ a {
     color: #fff;
     background-color: #29f;
     background-image: linear-gradient(135deg, rgba(35, 153, 255) 0%, rgba(84, 175, 253) 100%);
-    box-shadow: 0 3px 3px rgba(0, 40, 70, .3);
+    box-shadow: 0 3px 3px rgba(0, 40, 70, 0.3);
 }
 
 .list ul li.title {
@@ -355,13 +358,15 @@ svg.icon {
     .con .sou form .wd:focus {
         background: #f1f1f1;
         box-shadow: none;
-        border-color: #ccc
+        border-color: #ccc;
     }
 
     .con .sou form button {
         border-radius: 25px;
     }
-    .con .sou #word{max-height: 150px;}
+    .con .sou #word {
+        max-height: 150px;
+    }
 
     #menu1.on {
         right: 260px;
