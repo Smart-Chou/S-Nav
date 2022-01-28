@@ -118,7 +118,6 @@ var stickyNavigation = new StickyNavigation();
         $('body').toggleClass('modal-open');
         parent.toggleClass('seting-open');
     }
-    var copyUrl = new ClipboardJS('a.copy-url');
     var wid = 0;
     $(window).resize(function () {
         clearTimeout(wid);
