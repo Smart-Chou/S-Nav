@@ -9,13 +9,13 @@
         <meta name="description" content="单纯就是一个导航" />
         <link rel="stylesheet icon" href="/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" id="iconfont-css" href="/css/iconfont.css" type="text/css" media="all" />
-        <link href="/css/style.css" rel="stylesheet" type="text/css" />
-        <link href="/css/menu.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" id="iconfont-css" href="https://cdn.jsdelivr.net/gh/Smart-Chou/webstatic@latest/S-Nav/css/iconfont.css" type="text/css" media="all" />
+        <link href="https://cdn.jsdelivr.net/gh/Smart-Chou/webstatic@latest/S-Nav/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.jsdelivr.net/gh/Smart-Chou/webstatic@latest/S-Nav/css/menu.css" rel="stylesheet" type="text/css" />
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://at.alicdn.com/t/font_2789669_0l2iblksus6m.js"></script>
-        <script type="text/javascript" src="/js/main.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Smart-Chou/webstatic@latest/S-Nav/js/main.js"></script>
     </head>
     <body>
         <script type="text/javascript">
@@ -29,7 +29,7 @@
             var randomBgIndex = Math.round(Math.random() * 94);
             //随机获取字符串标识，注意图片数量(这里随机数包括0，图片要从bg0开始到bg(n)）
             console.log(randomBgIndex);
-            document.write('<style>@media (min-width:768px){#main{background:url("' + bodyBgs[randomBgIndex] + '");background-attachment: fixed;background-size: cover;</style>');
+            document.write('<style>@media (min-width:768px){#main{background:url("' + bodyBgs[randomBgIndex] + '");background-attachment: fixed;background-size: cover;}</style>');
             //上面的三个字符串可以用“+”连接成一个字符串，这里因为位置原因我拆开写了。
         </script>
         <div id="menu1"><i></i></div>
@@ -547,6 +547,6 @@
         </footer>
         <canvas class="fireworks" style="position: fixed; left: 0px; top: 0px; z-index: 99999999; pointer-events: none; width: 926px; height: 714px" width="1852" height="1428"></canvas>
         <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-        <script type="text/javascript" src="/js/fireworks.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Smart-Chou/webstatic@latest/S-Nav/js/fireworks.js"></script>
     </body>
 </html>
